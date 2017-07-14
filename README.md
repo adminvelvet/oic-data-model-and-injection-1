@@ -12,3 +12,6 @@ This post decribes somes features about oci-project data model.
 
 ![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data_pipelines.png)
 
+> Data model
+
+![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data_model.png)

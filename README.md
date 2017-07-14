@@ -9,3 +9,5 @@ This post decribes somes features about oci-project data model.
 - Table modelisation
 
 > Data source
+
+![Data Pipelines](https://github.com/gamboabdoulraoufou/bdutil-ambari/blob/master/ambari.conf.png)

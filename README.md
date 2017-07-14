@@ -15,3 +15,31 @@ This post decribes somes features about oci-project data.
 > Data model
 
 ![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data_model.png)
+
+
+> Databases creation  
+```sql
+CREATE DATABASE oic;
+
+``` 
+
+
+> Table creation
+```sql  
+-- SET DATABASE
+USE oic;
+
+-- CREATE TEMPORARIES TABLES
+
+-- CREATE FONCTIONAL TABLES (VUES IN THIS CASE)
+
+```
+
+
+> Data upload
+
+
+> Tables modelisation
+
+
+>

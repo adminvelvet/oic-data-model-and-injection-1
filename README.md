@@ -1,12 +1,12 @@
 ### oic-data-model
 
-This post decribes somes features about oci-project data model.
-- Data source
+This post decribes somes features about oci-project data.
+- Data source and pipelines
 - Data model
 - Databases creation
 - Table creation
-- Dataupload
-- Table modelisation
+- Data upload
+- Tables modelisation
 
 > Data source
 

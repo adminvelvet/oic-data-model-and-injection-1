@@ -8,7 +8,7 @@ This post decribes somes features about oci-project data.
 - Data upload
 - Tables modelisation
 
-> Data source
+> Data source and pipelines
 
 ![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data_pipelines.png)
 

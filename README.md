@@ -6,7 +6,7 @@ This post decribes somes features about oci-project data.
 - Databases creation
 - Table creation
 - Data upload
-- Tables modelisation
+
 
 > Data source and pipelines
 
@@ -53,9 +53,6 @@ For query optimization, all data will be stored into parquet format. We will add
 
 
 > Data upload
-
-
-> Tables modelisation
 
 
 >

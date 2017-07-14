@@ -10,7 +10,7 @@ This post decribes somes features about oci-project data.
 
 > Data source and pipelines
 
-![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data_pipeline.png)
+![Data Pipelines](https://github.com/agambov/oic-data-model/blob/master/img/data__pipeline.png)
 
 > Data model
 

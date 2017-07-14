@@ -26,6 +26,7 @@ CREATE DATABASE oic;
 
 
 > Table creation  
+
 First, we create a temporaries tables which contain row data in primitive format (all fields are in STRING format). 
 We create to category of tables:
 - full table: tables which contain full data

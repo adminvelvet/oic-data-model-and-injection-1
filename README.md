@@ -6,6 +6,7 @@ This post decribes somes features about oci-project data.
 - Databases creation
 - Table creation
 - Data upload
+- Data preparation
 
 
 > Data source and pipelines

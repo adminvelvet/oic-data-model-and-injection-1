@@ -1,0 +1,50 @@
+SET hive.exec.dynamic.partition=true;  
+SET hive.exec.dynamic.partition.mode=nonstrict; 
+
+-- 1- ACTIF_DATA_ET_DATE_ACTIVATION
+
+
+-- 2- BUNDLE
+INSERT OVERWRITE TABLE OIC.TF_BUNDLE PARTITION(PRT_DATE)
+  SELECT
+    FROM_UNIXTIME(UNIX_TIMESTAMP(DATE_SOUSCRIPTION, 'yyyyMMdd')),
+    CAST(MSISDN AS BIGINT),
+    TYPE_SOUSCRIPTION,
+    CAST(REGEXP_REPLACE(NOMBRE_SOUSCRIPTION, ',', '.') AS FLOAT),
+    CAST(REGEXP_REPLACE(MONTANT_SOUSCRIPTION, ',', '.') AS FLOAT),
+    DATE_SOUSCRIPTION
+  FROM OIC.TT_BUNDLE
+  WHERE TYPE_SOUSCRIPTION <> 'TYPE_SOUSCRIPTION'
+  ;
+             
+-- 3- CDR	
+-- 3-1- traffic_customer_cell
+
+-- 3-2- traffic_customer
+
+
+-- 4- DONNEES_HISTO_MENSUELLES
+
+
+-- 5- ENTRANT	
+
+
+-- 6- INFO_TERMINAUX	
+
+
+-- 7- MSIM	
+
+
+-- 8- RECHARGE	
+
+
+-- 9- REFERENTIEL_TERMINAUX
+
+
+-- 10- SORTANT
+
+
+-- 11- SVA	
+
+
+-- 12- TRANSACTION_OM

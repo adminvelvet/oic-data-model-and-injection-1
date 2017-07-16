@@ -32,7 +32,7 @@ First, we create a temporaries tables which contain row data in primitive format
 
 ```sh
 # Run script to create temporaries tables 
-hive -f 
+hive -f 01_create_tmp_table.sql
 ```
 
 > Functional table creation  
@@ -41,7 +41,7 @@ For query optimization, all functional table store data in Avro format and we ad
 
 ```sh
 # Run script to create functional tables 
-
+hive -f 02_create_table.sql
 ```
 
 > Sample table creation
@@ -50,7 +50,7 @@ For query optimization, all sample table store data in Avro format and we add a 
 
 ```sh
 # Run script to create sample tables 
-
+hive -f 03_create_10pct_table.sql
 ```
 
 
@@ -58,6 +58,7 @@ For query optimization, all sample table store data in Avro format and we add a 
 
 ```sh
 # Run script to load data
+hive -f 04_load_data_into_tmp_tables.sql
 
 ```
 
@@ -72,10 +73,29 @@ We create to category of tables:
 
 ```sh
 # Run script to load data
-
+hive -f 05_insert_into_cleaned_tables.sql
 ```
 
+> Load data into functional and sample table and drop temporary table
 
-> Create func 
+From temporary tables, we create 2 categories of functional tables:
+We create to category of tables:
+- full table: tables which contain full data
+- sample: tables which contain 10% of data
+
+
+
+```sh
+# Run script to load data
+hive -f 06_insert_into_cleaned_10pct_tale
+```
+
+> Drop temporaries tables
+
+```sh
+# Run script to drop tmp table
+hive -f 07_drop_tmp_tables.sql
+````
+
 
 

@@ -21,7 +21,7 @@ This post decribes somes features about oci-project data.
 > Databases creation  
 ```sql
 # Create database
-hive -e "CREATE DATABASE OIC"
+hive -e "DROP DATABASE OIC; CREATE DATABASE OIC"
 
 ``` 
 

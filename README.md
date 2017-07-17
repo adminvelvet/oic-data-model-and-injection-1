@@ -8,6 +8,24 @@ This post decribes somes features about oci-project data.
 - Data upload
 - Data preparation
 
+> Download git repo
+
+```sh
+# log as data_tech user
+sudo du data_tech
+
+# Clone git repo which contains script
+git clone https://github.com/agambov/oic-data-model-and-injection.git
+
+# go to script folder
+cd oic-data-model-and-injection/script/
+
+# add execution right on all sql script
+chmod +x *.sql
+
+# show files
+ls -l
+```
 
 > Data source and pipelines
 

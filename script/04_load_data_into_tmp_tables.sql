@@ -1,44 +1,536 @@
 
+-- 1- ACTIF_DATA_ET_DATE_ACTIVATION; Table = OIC.TT_ACTIF_DATA_ET_DATE_ACTIVATION
+LOAD DATA INPATH 'gs://velvet-orange-data/ACTIF_DATA_ET_DATE_ACTIVATION/*' INTO TABLE OIC.TT_ACTIF_DATA_ET_DATE_ACTIVATION;
 
--- 1- ACTIF_DATA_ET_DATE_ACTIVATION
+-- 2- Table = OIC.TT_BUNDLE
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201611/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201612/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201701/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201702/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201703/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/201704/*' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170427/BUNDLE_20170427_0.txt' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170428/BUNDLE_20170428_0.txt' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170429/BUNDLE_20170429_0.txt' INTO TABLE OIC.TT_BUNDLE;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170430/BUNDLE_20170430_0.txt' INTO TABLE OIC.TT_BUNDLE;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170427/BUNDLE_20170427_0.txt' INTO TABLE OIC.TT_BUNDLE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170428/BUNDLE_20170428_0.txt' INTO TABLE OIC.TT_BUNDLE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170429/BUNDLE_20170429_0.txt' INTO TABLE OIC.TT_BUNDLE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/BUNDLE/OCI_BUNDLE/20170430/BUNDLE_20170430_0.txt' INTO TABLE OIC.TT_BUNDLE_2;
+
+-- 3- CDR
+-- 3-1- Table = OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/29/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/30/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/29/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/30/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/31/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/29/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/30/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/31/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/29/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/30/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/31/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/1/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/10/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/11/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/12/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/13/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/14/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/15/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/16/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/17/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/18/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/19/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/2/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/20/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/21/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/22/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/23/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/24/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/25/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/26/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/27/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/28/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/29/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/3/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/30/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/4/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/5/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/6/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/7/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/8/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/9/traffic_customer_cell.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER_CELL;
 
 
--- 2- BUNDLE
-LOAD DATA INPATH '/BUNDLE/201611/*' INTO TABLE OIC.TT_BUNDLE;
-LOAD DATA INPATH '/BUNDLE/201612/*' INTO TABLE OIC.TT_BUNDLE;
-LOAD DATA INPATH '/BUNDLE/201701/*' INTO TABLE OIC.TT_BUNDLE;
-LOAD DATA INPATH '/BUNDLE/201702/*' INTO TABLE OIC.TT_BUNDLE;
-LOAD DATA INPATH '/BUNDLE/201703/*' INTO TABLE OIC.TT_BUNDLE;
-LOAD DATA INPATH '/BUNDLE/201704/*' INTO TABLE OIC.TT_BUNDLE;
-             
--- 3- CDR	
--- 3-1- traffic_customer_cell
+-- 3-2- traffic_customer; Table = OIC.TT_CDR_TRAFFIC_CUSTOMER;
+--LOAD DATA INPATH '' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/15/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/16/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/17/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/18/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/19/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/20/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/21/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/22/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/23/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/24/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/25/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/26/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/27/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/28/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/29/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/30/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/31/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
 
--- 3-2- traffic_customer
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/1/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/10/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/11/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/12/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/13/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/14/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/15/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/16/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/17/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/18/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/19/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/2/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/20/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/21/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/22/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/23/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/24/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/25/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/26/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/27/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/28/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/3/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/4/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/5/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/6/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/7/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/8/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/9/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/1/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/10/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/11/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/12/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/13/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/14/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/15/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/16/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/17/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/18/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/19/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/2/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/20/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/21/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/22/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/23/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/24/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/25/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/26/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/27/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/28/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/29/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/3/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/30/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/31/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/4/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/5/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/6/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/7/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/8/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/9/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/1/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/10/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/11/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/12/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/13/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/14/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/15/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/16/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/17/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/18/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/19/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/2/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/20/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/21/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/22/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/23/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/24/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/25/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/26/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/27/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/28/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/29/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/3/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/30/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/4/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/5/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/6/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/7/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/8/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/9/traffic_customer.txt' INTO TABLE OIC.TT_CDR_TRAFFIC_CUSTOMER;
+
+-- 3-3- Conversions_Id; Table = OIC.TT_CONVERSIONS_ID_*;
+-- Table = OIC.TT_CONVERSIONS_ID_APN;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Id_APN.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_APN;
+
+-- Table = OIC.TT_CONVERSIONS_ID_APPLI;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Id_appli.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_APPLI;
+
+-- Table = OIC.TT_CONVERSIONS_ID_CUST_CONTACT;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Id_cust_contract.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_CUST_CONTACT;
+
+-- Table = OIC.TT_CONVERSIONS_ID_GGSN;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Id_GGSN.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_GGSN;
+
+-- Table = OIC.TT_CONVERSIONS_ID_RAT;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Id_RAT.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_RAT;
+
+-- Table = OIC.TT_CONVERSIONS_ID_CUST_MSISDN;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Conversions_Id/Idcust_MSISDN.txt' INTO TABLE OIC.TT_CONVERSIONS_ID_CUST_MSISDN;
+
+-- 3-4- Localisation_cellules; Table = OIC.TT_LOCALISATION_CELLULES;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/Localisation_cellules/LOCALISATION-CELLULES-OCI.xlsx' INTO TABLE OIC.TT_LOCALISATION_CELLULES;
+
+-- 4- DONNEES_HISTO_MENSUELLES; Table = OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201611/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201612/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201701/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201702/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201703/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+LOAD DATA INPATH 'gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES/201704/*' INTO TABLE OIC.TT_DONNEES_HISTO_MENSUELLES;
+
+-- 5- ENTRANT; Table = OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/01-03/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/04-05/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/06-10/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/11-12/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/13-17/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/18/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/19/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/20-25/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/26/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/27/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201611/28-30/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/01-04/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/05-06/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/07-11/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/12-13/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/14-19/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/20/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/21/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/22-27/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/28/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/29-30/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201612/31/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/01-03/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/04-07/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/08-09/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/10-14/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/15-16/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/17-20/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/21-22/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/23-25/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/26-28/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201701/29-31/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/01-07/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/08-09/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/10-14/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/15-16/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/17-21/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/22-26/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201702/27-28/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/01-02/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/03-04/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/05-07/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/08-10/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/11-12/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/13-14/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/15-17/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/18-20/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/21-24/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/25-26/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/27-28/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201703/29-31/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/01-07/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/08-10/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/11-14/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/15-16/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/17-20/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/21-24/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/25-27/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/ENTRANT/201704/28-30/*' INTO TABLE OIC.TT_CDR_ENTRANT;
+
+-- 6- INFO_TERMINAUX; Table = OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201611/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201612/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201701/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201702/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201703/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/INFO_TERMINAUX/201704/*' INTO TABLE OIC.TT_INFO_TERMINAUX;
+
+-- 7- MSIM; Table = OIC.TT_MSIM;
+LOAD DATA INPATH 'gs://velvet-orange-data/MSIM/MSIM_20170719/*' INTO TABLE OIC.TT_MSIM;
+
+-- 8- RECHARGE; Table = OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201611/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201612/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201701/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201702/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201703/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/201704/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170427/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170428/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170429/*' INTO TABLE OIC.TT_RECHARGE;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170430/*' INTO TABLE OIC.TT_RECHARGE;
+
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170427/*' INTO TABLE OIC.TT_RECHARGE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170428/*' INTO TABLE OIC.TT_RECHARGE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170429/*' INTO TABLE OIC.TT_RECHARGE_2;
+LOAD DATA INPATH 'gs://velvet-orange-data/RECHARGE/OCI_RECHARGEMENT/20170430/*' INTO TABLE OIC.TT_RECHARGE_2;
 
 
--- 4- DONNEES_HISTO_MENSUELLES
+-- 9- REFERENTIEL_TERMINAUX; Table = OIC.TT_REFERENTIEL_TERMINAUX;
+LOAD DATA INPATH 'gs://velvet-orange-data/REFERENTIEL_TERMINAUX.txt' INTO TABLE OIC.TT_REFERENTIEL_TERMINAUX;
 
+-- 10- SORTANT; Table = OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/08-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/18-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/22-28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201611/25-30/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/08-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/18-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/22-28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201612/29-31/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201701/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201701/08-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201701/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201701/22-28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201701/29-31/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201702/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201702/08-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201702/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201702/22-28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201703/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201703/08-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201703/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201703/22-28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201703/29-31/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/01-07/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/08-14_New/08-09/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/08-14_New/10-14/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/15-21/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/22-26/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/27/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/28/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/29/*' INTO TABLE OIC.TT_CDR_SORTANT;
+LOAD DATA INPATH 'gs://velvet-orange-data/SORTANT/201704/30/*' INTO TABLE OIC.TT_CDR_SORTANT;
 
--- 5- ENTRANT	
+-- 11- SVA; Table = OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201611/*' INTO TABLE OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201612/*' INTO TABLE OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201701/*' INTO TABLE OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201702/*' INTO TABLE OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201703/*' INTO TABLE OIC.TT_SVA;
+LOAD DATA INPATH 'gs://velvet-orange-data/SVA/201704/*' INTO TABLE OIC.TT_SVA;
 
+-- 12- TRANSACTION_OM; Table = OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201611/*' INTO TABLE OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201612/*' INTO TABLE OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201701/*' INTO TABLE OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201702/*' INTO TABLE OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201703/*' INTO TABLE OIC.TT_TRANSACTION_OM;
+LOAD DATA INPATH 'gs://velvet-orange-data/TRANSACTION_OM/201704/*' INTO TABLE OIC.TT_TRANSACTION_OM;
 
--- 6- INFO_TERMINAUX	
+-----------------------------------------------------------
+-----------------------------------------------------------
+-- 13- Service Provider per Day
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/30/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201611;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/31/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201612;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/31/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201701;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/28/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201702;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/31/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201703;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/30/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_201704;
 
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/8/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170508;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/9/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170509;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/10/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170510;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/11/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170511;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/12/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170512;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/13/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170513;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/14/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170514;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/15/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170515;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/16/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170516;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/17/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170517;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/18/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170518;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/19/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170519;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/20/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170520;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/21/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170521;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/22/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170522;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/23/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170523;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/24/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170524;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/25/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170525;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201705/26/customers_sp_day.txt' INTO TABLE OIC.TT_customers_sp_day_20170526;
 
--- 7- MSIM	
-
-
--- 8- RECHARGE	
-
-
--- 9- REFERENTIEL_TERMINAUX
-
-
--- 10- SORTANT
-
-
--- 11- SVA	
-
-
--- 12- TRANSACTION_OM
+-- 14- Service Provider per month
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201611/30/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201611;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201612/31/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201612;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201701/31/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201701;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201702/28/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201702;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201703/31/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201703;
+LOAD DATA INPATH 'gs://velvet-orange-data/CDR/201704/30/customers_sp_month.txt' INTO TABLE OIC.TT_customers_sp_month_201704;

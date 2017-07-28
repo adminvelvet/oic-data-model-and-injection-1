@@ -1,0 +1,70 @@
+gsutil cp /home/orange_ic/www/DONNEES_HISTO_MENSUELLES/201612/* gs://oic-bucket/DONNEES_HISTO_MENSUELLES/201612/
+
+gsutil cp -r /home/orange_ic/www/DD-DATA/* gs://oic-bucket/DD-DATA
+
+
+--------------------------------------------------------------------
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ACTIF_DATA_ET_DATE_ACTIVATION gs://velvet-orange-data/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/BUNDLE/201611 gs://velvet-orange-data/BUNDLE/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Novembre2016/1  gs://velvet-orange-data/CDR/201611
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Novembre2016/10  gs://velvet-orange-data/CDR/201611
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Novembre2016/11  gs://velvet-orange-data/CDR/201611
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Janvier2017/15/traffic_customer.txt  gs://velvet-orange-data/CDR/201701/15
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Janvier2017/16/traffic_customer.txt  gs://velvet-orange-data/CDR/201701/16
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Janvier2017/17/traffic_customer.txt  gs://velvet-orange-data/CDR/201701/17
+
+fgouerou@sftp-server-ic:~$ gsutil cp /home/orange_ic/www/DD-DATA/Conversions\ Id/* gs://velvet-orange-data/CDR/Conversions_Id/
+
+fgouerou@sftp-server-ic:~$ gsutil cp /home/orange_ic/www/DD-DATA/Localisation_cellules/* gs://velvet-orange-data/CDR/Localisation_cellules
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/MSIM/MSIM_20170719  gs://velvet-orange-data/MSIM/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DONNEES_HISTO_MENSUELLES/201611 gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DONNEES_HISTO_MENSUELLES/201612 gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DONNEES_HISTO_MENSUELLES/201701 gs://velvet-orange-data/DONNEES_HISTO_MENSUELLES
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/01-03 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/04-05 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/06-10 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/11-12 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/13-17 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/18 gs://velvet-orange-data/ENTRANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/ENTRANT/201611/19 gs://velvet-orange-data/ENTRANT/201611/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/INFO_TERMINAUX/201612 gs://velvet-orange-data/INFO_TERMINAUX/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/INFO_TERMINAUX/201611 gs://velvet-orange-data/INFO_TERMINAUX/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/RECHARGE/201611 gs://velvet-orange-data/RECHARGE/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/RECHARGE/201612 gs://velvet-orange-data/RECHARGE/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/REFERENTIEL_TERMINAUX.txt gs://velvet-orange-data/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/SORTANT/201611/01-07 gs://velvet-orange-data/SORTANT/201611/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/SORTANT/201611/08-14 gs://velvet-orange-data/SORTANT/201611/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/SVA/201611 gs://velvet-orange-data/SVA/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/SVA/201612 gs://velvet-orange-data/SVA/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/TRANSACTION_OM/201611 gs://velvet-orange-data/TRANSACTION_OM/
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/TRANSACTION_OM/201612 gs://velvet-orange-data/TRANSACTION_OM/
+
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Novembre2016/30/customers_sp_* gs://velvet-orange-data/CDR/201611/30
+[root@hadoop-w-3 ~]# gsutil -m cp -r gs://oic-bucket/DD-DATA/Decembre2016/31/customers_sp_* gs://velvet-orange-data/CDR/201612/31
+
+
+----------------------------------------------------------------
+-- 26/07/2017
+
+
+# LOAD New Data from SFTP server to oic-bucket
+
+sudo gsutil -m cp -r /home/orange_ic/www/20170726/OCI_BUNDLE gs://oic-bucket/BUNDLE/
+sudo gsutil -m cp -r /home/orange_ic/www/20170726/OCI_RECHARGEMENT gs://oic-bucket/RECHARGE/
+
+gsutil -m cp -r gs://oic-bucket/BUNDLE/OCI_BUNDLE gs://velvet-orange-data/BUNDLE
+gsutil -m cp -r gs://oic-bucket/RECHARGE/OCI_RECHARGEMENT gs://velvet-orange-data/RECHARGE/
+
+gsutil -m cp -r gs://oic-bucket/DD-DATA/Mai2017/* gs://velvet-orange-data/CDR/201705
+
+
